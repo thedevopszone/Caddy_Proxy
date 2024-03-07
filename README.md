@@ -361,6 +361,52 @@ volumes:
 
 
 
+## Monitoring Caddy
+
+```
+{
+  servers {
+    metrics
+  }
+}
+
+test.devopszone.de {
+  respond "Hello, World!"
+}
+```
+curl localhost:2019/metrics
+
+
+## Tip
+
+Reverse Proxy simplest
+
+```
+:9000
+
+reverse_proxy :9000
+```
+
+
+Or when installed locally
+```
+vi /etc/caddy/Caddyfile
+
+:80 {
+  reverse_proxy :9000
+  # reverse_proxy jenkins:9000
+
+
+}
+
+
+
+```
+
+
+
+
+
 
 
 
