@@ -328,6 +328,8 @@ vi Caddyfile
 test.devopszone.de {
   reverse_proxy whoami:80 whoami2:80 whoami3:80 {
     lb_policy round_robin
+    lb_try_duration 1s
+    lb_try_interval 250ms
   }
   
 }
