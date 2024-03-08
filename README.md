@@ -319,13 +319,13 @@ COPY Caddyfile /etc/caddy/Caddyfile
 
 ## Reverse Proxy
 
-#vi Caddyfile
-#```
+vi Caddyfile
+```
 #test.devopszone.de {
 #  reverse_proxy localhost:8080
 #  reverse_proxy localhost:9000
 #}
-#```
+```
 
 vi Caddyfile
 ```
