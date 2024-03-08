@@ -114,9 +114,13 @@ In the directory there must be a index.html file
 caddy file-server --listen :9000 --browse
 
 # Or
+
+```
 mkdir -p /var/www
 touch index.html
 caddy file-server --listen :9000 --browse --root /var/www
+```
+
 
 ## Using the Caddyfile
 
