@@ -340,7 +340,7 @@ test.devopszone.de {
 ```
 
 
-
+```
 traefik/whoami:latest
 containername: whoami1  # Important because it maps to the name and then with the internal port !!!!!!!!
 port: 8080:80
@@ -362,7 +362,7 @@ volumes:
   - ./Caddyfile:/etc/caddy/Caddyfile
   - caddy_data:/data
   - caddy_config:/config
-
+```
 
 
 ## Monitoring Caddy
